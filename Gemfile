@@ -33,6 +33,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'foreman', '~> 0.87.2'
 gem 'devise'
 gem 'simple_form'
+gem 'font-awesome-rails'
 # customize by me end
 
 group :development, :test do

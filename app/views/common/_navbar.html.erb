@@ -5,11 +5,11 @@
 
   <div class="topnav-right">
     <% if !current_user %>
-      <a> <%= link_to("Signup", new_user_registration_path) %> </a>
-      <a> <%= link_to("Login", new_user_session_path) %> </a>
+      <a><%= link_to(content_tag(:i, 'Signup', class:'fa fa-user-plus'), new_user_registration_path) %></a>
+      <a><%= link_to(content_tag(:i, 'Login', class: 'fa fa-sign-in'), new_user_session_path) %></a>
     <% else %>
       <a class="active-email"> <%= current_user.email %> </a>
-      <a> <%= link_to("Logout", destroy_user_session_path, method: :delete) %> </a>
+      <a><%= link_to(content_tag(:i, 'Logout', class: 'fa fa-sign-out'), destroy_user_session_path, method: :delete) %></a>
     <% end %>
   </div>
 </div>
