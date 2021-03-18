@@ -31,6 +31,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 
 # customize by me start
 gem 'foreman', '~> 0.87.2'
+gem 'devise'
 # customize by me end
 
 group :development, :test do
